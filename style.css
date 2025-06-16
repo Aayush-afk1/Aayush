@@ -155,8 +155,8 @@ body {
 .social {
   position: absolute;
   z-index: 10;
-  bottom: 20px;
-  right: 25px;
+  bottom: 30px;
+  right: 35px;
   color: #fff;
   opacity: 0.9;
 }
@@ -166,8 +166,8 @@ body {
 }
 .social svg {
   --fill: #ff0000;
-  width: 55px;
-  height: 55px;
+  width: 65px;
+  height: 65px;
 }
 
 .cursor {
