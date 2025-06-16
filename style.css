@@ -159,15 +159,19 @@ body {
   right: 35px;
   color: #fff;
   opacity: 0.5;
+border-radius: 30px;
+      
 }
 .social a {
   display: inline-block;
   margin-left: 3px;
+border-radius: 30px;
 }
 .social svg {
   --fill: #ff0000;
   width: 65px;
   height: 65px;
+border-radius: 30px;
 }
 
 .cursor {
