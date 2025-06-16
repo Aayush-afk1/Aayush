@@ -165,13 +165,12 @@ border-radius: 30px;
 .social a {
   display: inline-block;
   margin-left: 3px;
-border-radius: 30px;
+width: 150px; height: 100px;
 }
 .social svg {
   --fill: #ff0000;
   width: 65px;
   height: 65px;
-width: 150px; height: 100px;
 }
 
 .cursor {
