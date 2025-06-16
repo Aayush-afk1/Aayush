@@ -154,11 +154,11 @@ body {
 
 .social {
   position: absolute;
-  z-index: 10;
+  z-index: 20;
   bottom: 30px;
   right: 35px;
   color: #fff;
-  opacity: 0.9;
+  opacity: 0.5;
 }
 .social a {
   display: inline-block;
