@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Code - A project by Aayush Chaudhary</title>
-  <link rel="stylesheet" href="./style.css"> 
-
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    #playMusicBtn, #pauseMusicBtn {
+      position: fixed;
+      left: 0px;
+      bottom: 20px;
+      padding: 10px 20px;
+      background: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    #pauseMusicBtn {
+      display: none; /* Hide pause initially */
+      right: 130px; /* show to the left of play button */
+    }
+  </style>
 </head>
 <body>
+
+<audio id="bgMusic" loop>
+  <source src="haniyan.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+<button id="playMusicBtn">Play Music 🎵</button>
+<button id="pauseMusicBtn">Pause Music ⏸️</button>
 
 <div class="carousel">
     <div class="carousel-item">
@@ -206,6 +232,24 @@
 </body>
 <!-- partial -->
   <script  src="./script.js"></script>
+<script>
+  const playBtn = document.getElementById("playMusicBtn");
+  const pauseBtn = document.getElementById("pauseMusicBtn");
+  const music = document.getElementById("bgMusic");
+
+  playBtn.addEventListener("click", () => {
+    music.play();
+    playBtn.style.display = "none";
+    pauseBtn.style.display = "inline-block";
+  });
+
+  pauseBtn.addEventListener("click", () => {
+    music.pause();
+    pauseBtn.style.display = "none";
+    playBtn.style.display = "inline-block";
+  });
+</script>
+
 
 </body>
 </html>
